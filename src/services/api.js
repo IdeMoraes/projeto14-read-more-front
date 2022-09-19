@@ -6,8 +6,13 @@ async function cadastrarUsuario(dados){
     axios.post(`${base_URL}/cadastro`, dados);
 }
 
+async function logarUsuario(dados){
+    const token = axios.post(`${base_URL}/login`, dados);
+    return token;
+}
+
 const api = {
-    cadastrarUsuario
+    cadastrarUsuario, logarUsuario
 }
 
 export default api;

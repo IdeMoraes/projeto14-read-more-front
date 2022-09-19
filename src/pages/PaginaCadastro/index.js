@@ -26,7 +26,7 @@ export default function PaginaCadastro(){
                 email: dados.email,
                 senha: dados.senha,
             });
-            navigate("/catalogo");
+            navigate("/login");
         } catch (error) {
             alert('Erro no cadastro, tente novamente');
             console.log(error);
