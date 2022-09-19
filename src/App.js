@@ -15,7 +15,7 @@ function App(){
         <UserContext.Provider value={{userName, setUserName, userEmail, setUserEmail, userToken, setUserToken}}>
             <BrowserRouter>
                 <Routes>
-                    <Route path='/' element={ <Navigate to="/cadastro" /> }/>
+                    <Route path='/' element={ <Navigate to="/login" /> }/>
                     <Route path="/cadastro" element={<PaginaCadastro/>}/>
                     <Route path="/login" element={<PaginaLogin/>}/>
                     <Route path="/catalogo" element={<PaginaCatalogo/>}/>
